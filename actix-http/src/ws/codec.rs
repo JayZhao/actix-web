@@ -86,7 +86,7 @@ impl Codec {
     /// Create new WebSocket frames decoder.
     pub const fn new() -> Codec {
         Codec {
-            max_size: 65_536,
+            max_size: 100*1024*1024,
             flags: Flags::SERVER,
         }
     }
